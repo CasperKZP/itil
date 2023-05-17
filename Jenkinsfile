@@ -5,6 +5,7 @@ pipeline {
       steps {
         echo 'Hello world'
         bat 'echo %cd%'
+        echo 'hello Dima'
       }
     }
 
