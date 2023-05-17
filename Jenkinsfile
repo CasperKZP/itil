@@ -4,6 +4,7 @@ pipeline {
     stage('Init') {
       steps {
         echo 'Hello world'
+        bat 'echo %cd%'
       }
     }
 
