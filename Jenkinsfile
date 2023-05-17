@@ -72,8 +72,10 @@ pipeline {
 
     stage('Init') {
       steps {
+        script {
         bat 'echo %cd%'
         utils.cmd("echo Hello world")
+      }
       }
     }
 
