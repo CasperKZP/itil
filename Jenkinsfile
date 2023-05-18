@@ -65,6 +65,7 @@ pipeline {
                         dir ('build') {
                             writeFile file:'dummy', text:''
                         }
+                        currentBuild.result = 'FAILURE'
                     }
                 }
             }
