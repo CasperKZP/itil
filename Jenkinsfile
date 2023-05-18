@@ -81,9 +81,10 @@ if (params.server1c == null || params.server1c == 'null') {
         script {
         bat 'echo %cd%'
         utils.cmd("echo Hello world")
-      }
-      }
+              }
+             }
 
     }
 
  }
+}
