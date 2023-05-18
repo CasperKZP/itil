@@ -67,7 +67,7 @@ pipeline {
                             writeFile file:'dummy', text:''
                         }
                         
-result 'FAIL'
+return 'FAIL'
                         
                     }
                 }
