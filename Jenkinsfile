@@ -83,14 +83,14 @@ if (params.server1c == null || params.server1c == 'null') {
         utils.cmd("echo Hello world")
               }
              }
+    }
 
- stage('Final') {
+   stage('Final') {
       steps {
         script {
-
+      
               }
              }
-
     }
 
  }
