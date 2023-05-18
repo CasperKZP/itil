@@ -67,9 +67,7 @@ pipeline {
                             writeFile file:'dummy', text:''
                         }
                         
-catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                 //   sh "exit 1"
-                }
+result 'FAIL'
                         
                     }
                 }
