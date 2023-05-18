@@ -68,11 +68,11 @@ pipeline {
                         }
                         
 if (params.server1c == null || params.server1c == 'null') { 
-  result "FAIL"
+  return "FAIL"
  // log.info ("FAIL")
     } else {
     //    log.info ("SUCCESS")
-    result "SUCCESS"
+    return "SUCCESS"
     }
                         
                     }
