@@ -67,7 +67,7 @@ pipeline {
                             writeFile file:'dummy', text:''
                         }
                         
-${(env.server1c == null || env.jenkserver1cinsAgent == 'null') ? result "FAIL" : result "SUCCESS"}
+${(env.server1c == null || env.server1c == 'null') ? result "FAIL" : result "SUCCESS"}
                         
                     }
                 }
