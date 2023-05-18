@@ -89,8 +89,8 @@ if (params.server1c == null || params.server1c == 'null') {
    stage('Final') {
    
    parallel {
-    stage('final1'){utils.cmd("final1")} 
-    stage('final2'){utils.cmd("final2")}
+    stage('final1'){script{utils.cmd("final1")}} 
+    stage('final2'){script{utils.cmd("final1/2")}}
             }
    }
 //паралельно
