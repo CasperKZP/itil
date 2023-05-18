@@ -92,8 +92,8 @@ if (params.server1c == null || params.server1c == 'null') {
     steps {
                 timestamps {
                     script {
- parallelTask["paralell"] = parallelTask()
- //parallel parallelTask
+
+parallel parallelTask()
  echo 'h'
    }
                 }}}
