@@ -69,9 +69,9 @@ pipeline {
                         
 if (params.server1c == null || params.server1c == 'null') { 
   result "FAIL"
-  log.info ("FAIL")
+ // log.info ("FAIL")
     } else {
-        log.info ("SUCCESS")
+    //    log.info ("SUCCESS")
     result "SUCCESS"
     }
                         
