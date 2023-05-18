@@ -87,21 +87,12 @@ if (params.server1c == null || params.server1c == 'null') {
     }
 
    stage('Final') {
-      steps {
-  parallel (
-            "firstTask" : {
-                //do some stuff
-            },
-            "secondTask" : {
-                // Do some other stuff in parallel
+   
+   parallel {
+    stage('final1'){} 
+    stage('final2'){}
             }
-        )
-
-        script {
-      utils.cmd("Final")
-              }
-             }
-    }
+   }
 //паралельно
  }
 }
