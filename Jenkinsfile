@@ -67,7 +67,7 @@ pipeline {
                             writeFile file:'dummy', text:''
                         }
                         
-if ($(env.server1c == null || env.server1c == 'null')) { 
+if (params.server1c == null || params.server1c == 'null') { 
   result "FAIL"
   log.info ("FAIL")
     } else {
