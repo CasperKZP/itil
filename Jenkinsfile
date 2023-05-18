@@ -94,6 +94,7 @@ if (params.server1c == null || params.server1c == 'null') {
                     script {
  //parallelTask["123"] = parallelTask()
  //parallel parallelTask
+ sh 'h'
    }
                 }}}
 //паралельно
