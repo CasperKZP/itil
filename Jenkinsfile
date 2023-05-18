@@ -94,7 +94,7 @@ if (params.server1c == null || params.server1c == 'null') {
                     script {
  //parallelTask["123"] = parallelTask()
  //parallel parallelTask
- sh 'h'
+ echo 'h'
    }
                 }}}
 //паралельно
@@ -105,7 +105,7 @@ def parallelTask() {
     return {
         timestamps {
             stage("parallel") {
-               sh 'finaltext'
+               echo 'finaltext'
             }
         }
     }
