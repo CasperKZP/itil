@@ -68,12 +68,8 @@ pipeline {
                         }
                         
 if (params.server1c == null || params.server1c == 'null') { 
-  error("server 1c is null")
- // log.info ("FAIL")
-    } else {
-    //    log.info ("SUCCESS")
-    return "SUCCESS"
-    }
+  error("server 1c is null")}
+    else {    return "SUCCESS"   }
                         
                     }
                 }
@@ -87,14 +83,9 @@ if (params.server1c == null || params.server1c == 'null') {
         utils.cmd("echo Hello world")
       }
       }
+
     }
 
-  stage('Final') {
-      steps {
-
-      }
-      }
-      
     }
   }
 }
