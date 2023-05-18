@@ -92,7 +92,7 @@ if (params.server1c == null || params.server1c == 'null') {
     steps {
                 timestamps {
                     script {
- parallelTask["123"] = parallelTask("string")
+ parallelTask["123"] = parallelTask()
  parallel parallelTask
    }
                 }}}
@@ -100,7 +100,7 @@ if (params.server1c == null || params.server1c == 'null') {
  }
 }
 
-def parallelTask(param1) {
+def parallelTask() {
     return {
         timestamps {
             stage("parallel") {
