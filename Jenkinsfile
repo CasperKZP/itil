@@ -69,9 +69,9 @@ pipeline {
                         
 if ($(env.server1c == null || env.server1c == 'null')) { 
   result "FAIL"
-  sh 'echo fail'
+  log.info ("FAIL")
     } else {
-      sh 'echo success'
+        log.info ("SUCCESS")
     result "SUCCESS"
     }
                         
