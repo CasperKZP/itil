@@ -104,8 +104,7 @@ def parallelTask(param1) {
     return {
         timestamps {
             stage("parallel") {
-                def utils = new Utils()
-utils.cmd("parallel")
+               sh 'finaltext'
             }
         }
     }
