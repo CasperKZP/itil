@@ -44,6 +44,13 @@ pipeline {
 
 //Шаг 1. Иниициализация
   stage("Подготовка") {
+when {
+		// Заданное условие expression. Оно задается пользователем при запуске конвейера и передается в скрипт через параметр "BUILD" 
+		expression { 
+			return false
+		}
+	}
+
             steps {
                 timestamps {
                     script {
