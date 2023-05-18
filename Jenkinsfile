@@ -44,12 +44,6 @@ pipeline {
 
 //Шаг 1. Иниициализация
   stage("Подготовка") {
-when {
-		// Заданное условие expression. Оно задается пользователем при запуске конвейера и передается в скрипт через параметр "BUILD" 
-		expression { 
-			return false
-		}
-	}
 
             steps {
                 timestamps {
@@ -72,7 +66,11 @@ when {
                         dir ('build') {
                             writeFile file:'dummy', text:''
                         }
-                        currentBuild.result = 'FAILURE'
+                        
+catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                    sh "exit 1"
+                }
+                        
                     }
                 }
             }
