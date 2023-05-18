@@ -75,7 +75,7 @@ if (params.server1c == null || params.server1c == 'null') {
                 }
             }
         }
-
+paralel {
     stage('Init') {
       steps {
         script {
@@ -92,6 +92,6 @@ if (params.server1c == null || params.server1c == 'null') {
               }
              }
     }
-
+}
  }
 }
