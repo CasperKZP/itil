@@ -80,7 +80,7 @@ if (params.server1c == null || params.server1c == 'null') {
       steps {
         script {
         bat 'echo %cd%'
-        utils.cmd("echo Hello world")
+        utils.cmd("Init")
               }
              }
     }
@@ -88,7 +88,7 @@ if (params.server1c == null || params.server1c == 'null') {
    stage('Final') {
       steps {
         script {
-      
+      utils.cmd("Final")
               }
              }
     }
